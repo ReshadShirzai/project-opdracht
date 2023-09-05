@@ -3,4 +3,8 @@ function getrandomnumber() {
 }
 
 const randomNumber = getrandomnumber();
-console.log(randomNumber);
+
+const roll = document.querySelector('.roll');
+roll.addEventListener('click', function() {
+    console.log(randomNumber);
+});
