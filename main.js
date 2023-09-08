@@ -6,8 +6,7 @@ roll.addEventListener('click', function() {
 });
 
 
-let computerScore = 0;
-let playerScore = 0;
+
 
 
 let computerScore = 0;
