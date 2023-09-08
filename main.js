@@ -1,31 +1,24 @@
-
-
-
-
-
-
-
 let computerScore = 0;
 let playerScore = 0;
 
 
+const roll = document.querySelector('.roll');
+roll.addEventListener('click', function() {
+    const randomNumber1 = getRandomNumber();
+    const randomNumber2 = getRandomNumber();
+    console.log(randomNumber1 + " " + randomNumber2); // Voeg een spatie tussen de getallen toe
+}); 
+console.log('hallo')
 
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-
     return Math.floor(Math.random() * (max - min + 1) + min);
  }
 
 function getRandomNumber() {
     return getRandomIntInclusive(1, 6);
 }
-
-const roll = document.querySelector('.roll');
-roll.addEventListener('click', function() {
-    const randomNumber = getRandomNumber(); // Genereer een nieuw willekeurig nummer
-    console.log(randomNumber);
-
 
 
 let diceOne = getRandomNumber();
@@ -46,4 +39,3 @@ setTimeout(function(){
     console.log('Dobbelsteen 4: ', diceFour);
     console.log('Gegooide dobbelstenen computer: ', total);
 }, 3000);
-});
