@@ -1,20 +1,19 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 const roll = document.querySelector('.roll');
 roll.addEventListener('click', function() {
     const randomNumber = getrandomnumber(); // Genereer een nieuw willekeurig nummer
     console.log(randomNumber);
 });
 
-=======
+
 let computerScore = 0;
 let playerScore = 0;
 
-=======
+
 let computerScore = 0;
 let playerScore = 0;
 
->>>>>>> 52548d0891899b085ea79b343facd596a843f0e0
+
 
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
