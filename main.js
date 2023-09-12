@@ -21,6 +21,7 @@ function getRandomNumber() {
 }
 
 
+
 let diceOne = getRandomNumber();
 let diceTwo = getRandomNumber();
 let total = diceOne + diceTwo;
@@ -29,7 +30,7 @@ console.log('Dobbelsteen 1: ', diceOne);
 console.log('Dobbelsteen 2: ', diceTwo);
 console.log('Gegooide dobbelstenen: ', total);
 
-
+let 1 = 
 setTimeout(function(){
     let diceThree = getRandomNumber();
     let diceFour = getRandomNumber();
