@@ -11,6 +11,7 @@ roll.addEventListener('click', function() {
     const dobbel2 =document.querySelector("img.dobbel")
     dobbel1.src = "img/dobbel" +randomNumber1+ ".png" 
     dobbel2.src = "img/dobbel" +randomNumber2+ ".png" 
+    console.log(randomNumber1 + " " + randomNumber2);
 }); 
 console.log('hallo')
 
@@ -34,7 +35,7 @@ console.log('Dobbelsteen 1: ', diceOne);
 console.log('Dobbelsteen 2: ', diceTwo);
 console.log('Gegooide dobbelstenen: ', total);
 
-// let 1 = 
+
 setTimeout(function(){
     let diceThree = getRandomNumber();
     let diceFour = getRandomNumber();
