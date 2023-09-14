@@ -6,7 +6,7 @@ const roll = document.querySelector('.roll');
 roll.addEventListener('click', function() {
     const randomNumber1 = getRandomNumber();
     const randomNumber2 = getRandomNumber();
-    console.log(randomNumber1 + " " + randomNumber2); // Voeg een spatie tussen de getallen toe
+    console.log(randomNumber1 + " " + randomNumber2);
 }); 
 console.log('hallo')
 
