@@ -7,6 +7,10 @@ roll.addEventListener('click', function() {
     const randomNumber1 = getRandomNumber();
     const randomNumber2 = getRandomNumber();
     console.log(randomNumber1 + " " + randomNumber2); // Voeg een spatie tussen de getallen toe
+    const dobbel1 =document.querySelector("img.dobbel")
+    const dobbel2 =document.querySelector("img.dobbel")
+    dobbel1.src = "img/dobbel" +randomNumber1+ ".png" 
+    dobbel2.src = "img/dobbel" +randomNumber2+ ".png" 
 }); 
 console.log('hallo')
 
@@ -40,3 +44,9 @@ setTimeout(function(){
     console.log('Dobbelsteen 4: ', diceFour);
     console.log('Gegooide dobbelstenen computer: ', total);
 }, 3000);
+
+
+const myname = "Pascal";
+
+
+const bericht = "Hallo" + myname + ", Hoe gaat het?";
