@@ -24,8 +24,6 @@ function getRandomNumber() {
     return getRandomIntInclusive(1, 6);
 }
 
-
-
 let diceOne = getRandomNumber();
 let diceTwo = getRandomNumber();
 let total = diceOne + diceTwo;
