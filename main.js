@@ -7,8 +7,8 @@ roll.addEventListener('click', function() {
     const randomNumber1 = getRandomNumber();
     const randomNumber2 = getRandomNumber();
     console.log(randomNumber1 + " " + randomNumber2); // Voeg een spatie tussen de getallen toe
-    const dobbel1 =document.querySelector("img.dobbel")
-    const dobbel2 =document.querySelector("img.dobbel")
+    const dobbel1 =document.querySelector(".dobbel1")
+    const dobbel2 =document.querySelector(".dobbel2")
     dobbel1.src = "img/dobbel" +randomNumber1+ ".png" 
     dobbel2.src = "img/dobbel" +randomNumber2+ ".png" 
     console.log(randomNumber1 + " " + randomNumber2);
