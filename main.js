@@ -45,5 +45,4 @@ setTimeout(function(){
     console.log('Gegooide dobbelstenen computer: ', total);
 }, 3000);
 
-
 //r.i.p Pascal
