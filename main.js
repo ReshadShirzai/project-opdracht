@@ -11,7 +11,6 @@ roll.addEventListener('click', function() {
     const dobbel2 =document.querySelector(".dobbel2")
     dobbel1.src = "img/dobbel" +randomNumber1+ ".png" 
     dobbel2.src = "img/dobbel" +randomNumber2+ ".png" 
-    console.log(randomNumber1 + " " + randomNumber2);
 }); 
 console.log('hallo')
 
