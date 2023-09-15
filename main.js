@@ -46,7 +46,4 @@ setTimeout(function(){
 }, 3000);
 
 
-const myname = "Pascal";
-
-
-const bericht = "Hallo" + myname + ", Hoe gaat het?";
+//r.i.p Pascal
