@@ -14,7 +14,7 @@ roll.addEventListener('click', function() {
     dobbel1.src = "img/dobbel" +randomNumber1+ ".png" 
     dobbel2.src = "img/dobbel" +randomNumber2+ ".png"
 }); 
-console.log('hallo')
+console.log('OK')
 
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
@@ -56,6 +56,7 @@ if (totalPlayer < totalComputer){
     console.log("Gelijkspel!")
 }
 }); 
+
 
 
 
