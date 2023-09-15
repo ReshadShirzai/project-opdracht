@@ -74,3 +74,29 @@ button {
 .dobbel1 {
     margin-left: 100px;
 }
+
+.dobbel3 {
+    margin-left: 750px;
+}
+
+.player {
+    font-size: 50px;
+    margin-left: 300px;
+}
+
+.plrpoints {
+    font-size: 30px;
+    margin-left: 260px;
+}
+
+.computer {
+    font-size: 50px;
+    margin-left: 1430px;
+    margin-top: -140px;
+}
+
+.cpu-points {
+    font-size: 30px;
+    margin-left: 1490px;
+    margin-top: -3px;
+}
