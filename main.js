@@ -37,8 +37,16 @@ btnHigher.addEventListener('click', function() {
     totalComputer = randomNumber3 + randomNumber4;
 if (totalPlayer > totalComputer){
     console.log("jij wint!")
+    playerScore++;
+    computerScore--;
+    console.log(playerScore)
+    console.log(computerScore)
 } else if(totalPlayer < totalComputer) {
     console.log("Computer wint!")
+    playerScore--;
+    computerScore++;
+    console.log(playerScore)
+    console.log(computerScore)
 } else {
     console.log("Gelijkspel!")
 }
