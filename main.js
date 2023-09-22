@@ -49,7 +49,7 @@ if (totalPlayer > totalComputer){
     let plrpoints = document.querySelector('.plrpoints');
     plrpoints.innerHTML = playerScore + " " + "punten";
     let cpupoints = document.querySelector('.cpupoints');
-    cpupoints.innerHTML = playerScore + " " + "punten";
+    cpupoints.innerHTML = computerScore + " " + "punten";
 } else if(totalPlayer < totalComputer) {
     console.log("Computer wint!")
     playerScore--;
@@ -59,7 +59,7 @@ if (totalPlayer > totalComputer){
     let plrpoints = document.querySelector('.plrpoints');
     plrpoints.innerHTML = playerScore + " " + "punten";
     let cpupoints = document.querySelector('.cpupoints');
-    cpupoints.innerHTML = playerScore + " " + "punten";
+    cpupoints.innerHTML = computerScore + " " + "punten";
 } else {
     console.log("Gelijkspel!")
 }
@@ -78,7 +78,7 @@ if (totalPlayer < totalComputer){
     let plrpoints = document.querySelector('.plrpoints');
     plrpoints.innerHTML = playerScore + " " + "punten";
     let cpupoints = document.querySelector('.cpupoints');
-    cpupoints.innerHTML = playerScore + " " + "punten";
+    cpupoints.innerHTML = computerScore + " " + "punten";
 } else if(totalPlayer > totalComputer) {
     console.log("Computer wint!")
     playerScore--;
@@ -88,7 +88,7 @@ if (totalPlayer < totalComputer){
     let plrpoints = document.querySelector('.plrpoints');
     plrpoints.innerHTML = playerScore + " " + "punten";
     let cpupoints = document.querySelector('.cpupoints');
-    cpupoints.innerHTML = playerScore + " " + "punten";
+    cpupoints.innerHTML = computerScore + " " + "punten";
 } else {
     console.log("Gelijkspel!")
 }
