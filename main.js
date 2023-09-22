@@ -36,10 +36,10 @@ btnHigher.addEventListener('click', function() {
     totalPlayer = randomNumber1 + randomNumber2;
     totalComputer = randomNumber3 + randomNumber4;
 if (totalPlayer > totalComputer){
-    setTimeout(function(){
-    let remove = document.querySelector('.winner');
     let playerwin = document.querySelector('.winner');
     playerwin.innerHTML = "Jij wint!"
+    setTimeout(function(){
+    playerwin.innerHTML = " "
 }, 2000);
 
     playerScore++;
