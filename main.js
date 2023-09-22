@@ -52,6 +52,12 @@ if (totalPlayer > totalComputer){
     cpupoints.innerHTML = computerScore + " " + "punten";
 } else if(totalPlayer < totalComputer) {
     console.log("Computer wint!")
+    let playerwin = document.querySelector('.winner');
+    playerwin.innerHTML = "Jij wint!"
+    setTimeout(function(){
+    playerwin.innerHTML = " "
+}, 2000);
+//van de computer
     playerScore--;
     computerScore++;
     console.log(playerScore);
