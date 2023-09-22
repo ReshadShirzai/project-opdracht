@@ -36,17 +36,22 @@ btnHigher.addEventListener('click', function() {
     totalPlayer = randomNumber1 + randomNumber2;
     totalComputer = randomNumber3 + randomNumber4;
 if (totalPlayer > totalComputer){
-    console.log("jij wint!")
+    console.log("jij wint!");
     playerScore++;
     computerScore--;
-    console.log(playerScore)
-    console.log(computerScore)
+    console.log(playerScore);
+    console.log(computerScore);
+    let plrpoints = document.querySelector('.plrpoints');
+    plrpoints.innerHTML = playerScore + " " + "punten";
 } else if(totalPlayer < totalComputer) {
     console.log("Computer wint!")
     playerScore--;
     computerScore++;
-    console.log(playerScore)
-    console.log(computerScore)
+    console.log(playerScore);
+    console.log(computerScore);
+
+    let plrpoints = document.querySelector('.plrpoints');
+    plrpoints.innerHTML = playerScore + " " + "punten";
 } else {
     console.log("Gelijkspel!")
 }
