@@ -25,8 +25,6 @@ function getRandomIntInclusive(min, max) {
 function getRandomNumber() {
     return getRandomIntInclusive(1, 6);
 }
-let randomNumber3 = getRandomNumber();
-let randomNumber4 = getRandomNumber();
 
 let totalPlayer = 0;
 let totalComputer = 0;
@@ -140,7 +138,11 @@ if (totalPlayer > totalComputer){
 }, 2000);
 }
 }); 
-
+//spelregels knop
+const spelknop = document.querySelector('.spelknop');
+spelknop.addEventListener('click', function() {
+alert
+});
 
 
 
