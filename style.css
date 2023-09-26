@@ -27,7 +27,7 @@ h1{
 
 }
 
-button {
+button{
     margin: 1rem;
 }
 
@@ -72,6 +72,25 @@ button {
     border-width: 5px;
 }
 
+.spelknop{
+    width: 150px;
+    height: 40px;
+    background-color: #0F1E0D;
+    font-size: large;
+    color: #11D384;
+    border-color: #11D384;
+    border-style:solid;
+    border-radius: 8px;
+    border-width: 5px;
+}
+.spelregels{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 65%;
+    transform: translate(50, -50%);
+}
+
 .dobbel1 {
     margin-left: 100px;
 }
@@ -106,6 +125,7 @@ button {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 30px;
     color: rgb(0, 255, 13);
-    margin-left: 845px;
+    margin-left: 835px;
     margin-top: -270px;
 }
+
