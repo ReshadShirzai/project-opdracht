@@ -68,6 +68,11 @@ if (totalPlayer > totalComputer){
     cpupoints.innerHTML = computerScore + " " + "punten";
 } else {
     console.log("Gelijkspel!")
+    let Gelijkspel = document.querySelector('.winner');
+    Gelijkspel.innerHTML = "Gelijkspel!"
+    setTimeout(function(){
+    Gelijkspel.innerHTML = " "
+}, 2000);
 }
 });
 
@@ -85,6 +90,12 @@ if (totalPlayer < totalComputer){
     plrpoints.innerHTML = playerScore + " " + "punten";
     let cpupoints = document.querySelector('.cpupoints');
     cpupoints.innerHTML = computerScore + " " + "punten";
+    let playerwin = document.querySelector('.winner');
+    playerwin.innerHTML = "Jij wint!"
+    setTimeout(function(){
+    playerwin.innerHTML = " "
+}, 2000);
+    
 } else if(totalPlayer > totalComputer) {
     console.log("Computer wint!")
     playerScore--;
@@ -97,6 +108,11 @@ if (totalPlayer < totalComputer){
     cpupoints.innerHTML = computerScore + " " + "punten";
 } else {
     console.log("Gelijkspel!")
+    let Gelijkspel = document.querySelector('.winner');
+    Gelijkspel.innerHTML = "Gelijkspel!"
+    setTimeout(function(){
+    Gelijkspel.innerHTML = " "
+}, 2000);
 }
 }); 
 
