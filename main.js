@@ -80,7 +80,7 @@ const BtnLower = document.querySelector('.Lager');
 BtnLower.addEventListener('click', function() {
     totalPlayer = randomNumber1 + randomNumber2;
     totalComputer = randomNumber3 + randomNumber4;
-if (totalPlayer < totalComputer){
+if (totalPlayer > totalComputer){
     console.log("jij wint!")
     playerScore++;
     computerScore--;
@@ -96,7 +96,7 @@ if (totalPlayer < totalComputer){
     playerwin.innerHTML = " "
 }, 2000);
     
-} else if(totalPlayer > totalComputer) {
+} else if(totalPlayer < totalComputer) {
     console.log("Computer wint!")
     playerScore--;
     computerScore++;
@@ -106,12 +106,17 @@ if (totalPlayer < totalComputer){
     plrpoints.innerHTML = playerScore + " " + "punten";
     let cpupoints = document.querySelector('.cpupoints');
     cpupoints.innerHTML = computerScore + " " + "punten";
+    let cpuwin = document.querySelector('.winner');
+    cpuwin.innerHTML = "Computer wint!"
+    setTimeout(function(){
+        cpuwin.innerHTML = " "
+    }, 2000);
 } else {
     console.log("Gelijkspel!")
-    let Gelijkspel = document.querySelector('.winner');
-    Gelijkspel.innerHTML = "Gelijkspel!"
+    let draw = document.querySelector('.winner');
+    draw.innerHTML = "Gelijkspel!"
     setTimeout(function(){
-    Gelijkspel.innerHTML = " "
+    draw.innerHTML = " "
 }, 2000);
 }
 }); 
