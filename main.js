@@ -104,10 +104,10 @@ if (totalPlayer < totalComputer){
 
 
 
-setTimeout(function(){
-    console.log('Dobbelsteen 3: ', randomNumber3);
-    console.log('Dobbelsteen 4: ', randomNumber4);
-    console.log('Gegooide dobbelstenen computer: ', totalComputer);
-}, 3000);
+//setTimeout(function(){
+//    console.log('Dobbelsteen 3: ', randomNumber3);
+//    console.log('Dobbelsteen 4: ', randomNumber4);
+//    console.log('Gegooide dobbelstenen computer: ', totalComputer);
+//}, 3000);
 
 //r.i.p Pascal
