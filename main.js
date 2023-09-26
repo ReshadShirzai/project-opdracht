@@ -67,6 +67,11 @@ if (totalPlayer > totalComputer){
     plrpoints.innerHTML = playerScore + " " + "punten";
     let cpupoints = document.querySelector('.cpupoints');
     cpupoints.innerHTML = computerScore + " " + "punten";
+    let cpuwin = document.querySelector('.winner');
+    cpuwin.innerHTML = "Computer wint!"
+    setTimeout(function(){
+        cpuwin.innerHTML = " "
+    }, 2000);
 } else {
     console.log("Gelijkspel!")
     let Gelijkspel = document.querySelector('.winner');
