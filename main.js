@@ -34,8 +34,15 @@ let totalComputer = 0;
 //knoppen hoger
 const btnHigher = document.querySelector('.Hoger');
 btnHigher.addEventListener('click', function() {
+    let randomNumber3 = getRandomNumber();
+    let randomNumber4 = getRandomNumber();
     totalPlayer = randomNumber1 + randomNumber2;
     totalComputer = randomNumber3 + randomNumber4;
+    console.log(randomNumber3+ " " +randomNumber4);
+    let dobbel3 =document.querySelector(".dobbel3")
+    let dobbel4 =document.querySelector(".dobbel4")
+    dobbel3.src = "img/dobbel" +randomNumber3+ ".png" 
+    dobbel4.src = "img/dobbel" +randomNumber4+ ".png"
 if (totalPlayer > totalComputer){
     let playerwin = document.querySelector('.winner');
     playerwin.innerHTML = "Jij wint!"
@@ -79,8 +86,15 @@ if (totalPlayer > totalComputer){
 //knoppen lager
 const BtnLower = document.querySelector('.Lager');
 BtnLower.addEventListener('click', function() {
+    let randomNumber3 = getRandomNumber();
+    let randomNumber4 = getRandomNumber();
     totalPlayer = randomNumber1 + randomNumber2;
     totalComputer = randomNumber3 + randomNumber4;
+    console.log(randomNumber3+ " " +randomNumber4);
+    let dobbel3 =document.querySelector(".dobbel3")
+    let dobbel4 =document.querySelector(".dobbel4")
+    dobbel3.src = "img/dobbel" +randomNumber3+ ".png" 
+    dobbel4.src = "img/dobbel" +randomNumber4+ ".png"
 if (totalPlayer > totalComputer){
     console.log("jij wint!")
     playerScore++;
