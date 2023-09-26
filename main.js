@@ -31,6 +31,7 @@ let randomNumber4 = getRandomNumber();
 let totalPlayer = 0;
 let totalComputer = 0;
 
+//knoppen hoger
 const btnHigher = document.querySelector('.Hoger');
 btnHigher.addEventListener('click', function() {
     totalPlayer = randomNumber1 + randomNumber2;
@@ -75,7 +76,7 @@ if (totalPlayer > totalComputer){
 }, 2000);
 }
 });
-
+//knoppen lager
 const BtnLower = document.querySelector('.Lager');
 BtnLower.addEventListener('click', function() {
     totalPlayer = randomNumber1 + randomNumber2;
