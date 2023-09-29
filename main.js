@@ -144,9 +144,6 @@ spelknop.addEventListener('click', function() {
 alert
 });
 
-
-
-
 //setTimeout(function(){
 //    console.log('Dobbelsteen 3: ', randomNumber3);
 //    console.log('Dobbelsteen 4: ', randomNumber4);
