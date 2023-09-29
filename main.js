@@ -13,6 +13,8 @@ roll.addEventListener('click', function() {
     const dobbel2 =document.querySelector(".dobbel2")
     dobbel1.src = "img/dobbel" +randomNumber1+ ".png" 
     dobbel2.src = "img/dobbel" +randomNumber2+ ".png"
+    btnHigher.disabled = false;
+    BtnLower.disabled = false;
 }); 
 console.log('OK')
 
@@ -41,6 +43,8 @@ btnHigher.addEventListener('click', function() {
     let dobbel4 =document.querySelector(".dobbel4")
     dobbel3.src = "img/dobbel" +randomNumber3+ ".png" 
     dobbel4.src = "img/dobbel" +randomNumber4+ ".png"
+    btnHigher.disabled = true;
+    BtnLower.disabled = true;
 if (totalPlayer > totalComputer){
     let playerwin = document.querySelector('.winner');
     playerwin.innerHTML = "Jij wint!"
@@ -98,6 +102,8 @@ BtnLower.addEventListener('click', function() {
     let dobbel4 =document.querySelector(".dobbel4")
     dobbel3.src = "img/dobbel" +randomNumber3+ ".png" 
     dobbel4.src = "img/dobbel" +randomNumber4+ ".png"
+    BtnLower.disabled = true;
+    btnHigher.disabled = true;
 if (totalPlayer > totalComputer){
     console.log("jij wint!")
     playerScore++;
