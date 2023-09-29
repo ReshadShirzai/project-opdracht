@@ -46,7 +46,7 @@ button{
 }
 
 .Lager {
-    /* margin-left: 500px;
+    /* margin-left: 250px;
     margin-top: 250px; */
     width: 250px;
     height: 50px;
@@ -57,6 +57,10 @@ button{
     border-style:solid;
     border-radius: 8px;
     border-width: 5px;
+}
+.Lager:disabled {
+ opacity: 0.6;
+    cursor: not-allowed;
 }
 .Hoger {
     /* margin-left: 250px;
@@ -71,7 +75,10 @@ button{
     border-radius: 8px;
     border-width: 5px;
 }
-
+.Hoger:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
 .spelknop{
     width: 150px;
     height: 40px;
