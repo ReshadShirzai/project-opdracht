@@ -4,17 +4,23 @@ let playerScore = 0;
 let randomNumber1 = 0;
 let randomNumber2 = 0;
 
+const btnHigher = document.querySelector('.Hoger');
+const BtnLower = document.querySelector('.Lager');
+
+btnHigher.disabled = true;
+BtnLower.disabled = true;
 const roll = document.querySelector('.roll');
 roll.addEventListener('click', function() {
     randomNumber1 = getRandomNumber();
     randomNumber2 = getRandomNumber();
-    console.log(randomNumber1 + " " + randomNumber2); // Voeg een spatie tussen de getallen toe
+    console.log(randomNumber1 + " " + randomNumber2);
     const dobbel1 =document.querySelector(".dobbel1")
     const dobbel2 =document.querySelector(".dobbel2")
     dobbel1.src = "img/dobbel" +randomNumber1+ ".png" 
     dobbel2.src = "img/dobbel" +randomNumber2+ ".png"
     btnHigher.disabled = false;
     BtnLower.disabled = false;
+    roll.disabled =true;
 }); 
 console.log('OK')
 
@@ -32,7 +38,6 @@ let totalPlayer = 0;
 let totalComputer = 0;
 
 //knoppen hoger
-const btnHigher = document.querySelector('.Hoger');
 btnHigher.addEventListener('click', function() {
     let randomNumber3 = getRandomNumber();
     let randomNumber4 = getRandomNumber();
@@ -45,6 +50,7 @@ btnHigher.addEventListener('click', function() {
     dobbel4.src = "img/dobbel" +randomNumber4+ ".png"
     btnHigher.disabled = true;
     BtnLower.disabled = true;
+    roll.disabled = false;
 if (totalPlayer > totalComputer){
     let playerwin = document.querySelector('.winner');
     playerwin.innerHTML = "Jij wint!"
@@ -91,7 +97,6 @@ if (totalPlayer > totalComputer){
 }
 });
 //knoppen lager
-const BtnLower = document.querySelector('.Lager');
 BtnLower.addEventListener('click', function() {
     let randomNumber3 = getRandomNumber();
     let randomNumber4 = getRandomNumber();
@@ -104,6 +109,7 @@ BtnLower.addEventListener('click', function() {
     dobbel4.src = "img/dobbel" +randomNumber4+ ".png"
     BtnLower.disabled = true;
     btnHigher.disabled = true;
+    roll.disabled = false;
 if (totalPlayer > totalComputer){
     console.log("jij wint!")
     playerScore++;
@@ -147,13 +153,5 @@ if (totalPlayer > totalComputer){
 //spelregels knop
 const spelknop = document.querySelector('.spelknop');
 spelknop.addEventListener('click', function() {
-alert
+alert("hallo dit is een alert")
 });
-
-//setTimeout(function(){
-//    console.log('Dobbelsteen 3: ', randomNumber3);
-//    console.log('Dobbelsteen 4: ', randomNumber4);
-//    console.log('Gegooide dobbelstenen computer: ', totalComputer);
-//}, 3000);
-
-//r.i.p Pascal
