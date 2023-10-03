@@ -150,8 +150,13 @@ if (totalPlayer > totalComputer){
 }, 2000);
 }
 }); 
+
 //spelregels knop
-const spelknop = document.querySelector('.spelknop');
-spelknop.addEventListener('click', function() {
-alert("hallo dit is een alert")
+const gamebutton = document.querySelector('.gamebutton');
+gamebutton.addEventListener('click', function() {
+    let rules = document.querySelector('.rules');
+    rules.textContent = "Jij begint met het rollen van de twee dobbelstenen. Daarna ga je raden of de computer die je tegen speelt hoger of lager gaat gooien. Raad je correct, krijg je één punt. Raad je fout, verlies je één punt. Hetzelfde behoort tot de computer."
+    setTimeout(function(){
+        rules.textContent = " "
+    }, 10000);
 });
