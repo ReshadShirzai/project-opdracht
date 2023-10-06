@@ -157,10 +157,12 @@ let rulesOn = true
 gamebutton.addEventListener('click', function () {
     let rules = document.querySelector('.rules');
     if (rulesOn) {
+        rules.style.border = "3px solid #11D384";
         rules.textContent = "Jij begint met het rollen van de twee dobbelstenen. Daarna ga je raden of de computer die je tegen speelt hoger of lager gaat gooien. Raad je correct, krijg je één punt. Raad je fout, verlies je één punt. Hetzelfde behoort tot de computer.";
     }
     else {
         rules.textContent = " "
+        rules.style.border = "0px solid #11D384";
     }
 
     rulesOn = !rulesOn;
