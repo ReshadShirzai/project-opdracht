@@ -1,5 +1,5 @@
 let computerScore = 10;
-let playerScore = 10;
+let playerScore = 1;
 let plrpoints = document.querySelector('.plrpoints');
 plrpoints.innerHTML = playerScore + " " + "punten";
 let cpupoints = document.querySelector('.cpupoints');
@@ -70,13 +70,16 @@ btnHigher.addEventListener('click', function () {
         plrpoints.innerHTML = playerScore + " " + "punten";
         let cpupoints = document.querySelector('.cpupoints');
         cpupoints.innerHTML = computerScore + " " + "punten";
+
     } else if (totalPlayer < totalComputer) {
-        console.log("Computer wint!")
-        let playerwin = document.querySelector('.winner');
-        playerwin.innerHTML = "Jij wint!"
-        setTimeout(function () {
-            playerwin.innerHTML = " "
-        }, 2000);
+        console.log("Computer wint!");
+        if (playerScore <= 0){
+            cputotalwin = document.querySelector('.totalwinner');
+            cpugeduld = document.querySelector('.geduld');
+           cputotalwin.innerHTML = "Computer heeft gewonnen!"
+           cpugeduld.innerHTML = "Een ogenblik, geduld a.u.b"
+       
+       }    else{      
         //van de computer
         playerScore--;
         computerScore++;
@@ -91,6 +94,8 @@ btnHigher.addEventListener('click', function () {
         setTimeout(function () {
             cpuwin.innerHTML = " "
         }, 2000);
+    };
+        
     } else {
         console.log("Gelijkspel!")
         let Gelijkspel = document.querySelector('.winner');
@@ -155,14 +160,16 @@ BtnLower.addEventListener('click', function () {
     }
 });
 
-if (playerScore < 0){
-     cpuwin = document.querySelector('.totalwinner');
+if (playerScore <= 0){
+     cputotalwin = document.querySelector('.totalwinner');
      cpugeduld = document.querySelector('.geduld');
-    cpuwin.innerHTML = "Computer wint!"
+    cputotalwin.innerHTML = "Computer heeft gewonnen!"
     cpugeduld.innerHTML = "Een ogenblik, geduld a.u.b"
 
+}    else{
+        console.log("werkt niet");
+    };
 
-}
 
 //spelregels knop
 const gamebutton = document.querySelector('.gamebutton');
