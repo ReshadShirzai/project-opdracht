@@ -1,5 +1,9 @@
-let computerScore = 0;
-let playerScore = 0;
+let computerScore = 10;
+let playerScore = 10;
+let plrpoints = document.querySelector('.plrpoints');
+plrpoints.innerHTML = playerScore + " " + "punten";
+let cpupoints = document.querySelector('.cpupoints');
+cpupoints.innerHTML = computerScore + " " + "punten";
 
 let randomNumber1 = 0;
 let randomNumber2 = 0;
@@ -150,6 +154,15 @@ BtnLower.addEventListener('click', function () {
         }, 2000);
     }
 });
+
+if (playerScore < 0){
+     cpuwin = document.querySelector('.totalwinner');
+     cpugeduld = document.querySelector('.geduld');
+    cpuwin.innerHTML = "Computer wint!"
+    cpugeduld.innerHTML = "Een ogenblik, geduld a.u.b"
+
+
+}
 
 //spelregels knop
 const gamebutton = document.querySelector('.gamebutton');
