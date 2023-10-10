@@ -174,17 +174,6 @@ BtnLower.addEventListener('click', function () {
     }
 });
 
-if (playerScore <= 0){
-     cputotalwin = document.querySelector('.totalwinner');
-     cpugeduld = document.querySelector('.geduld');
-    cputotalwin.innerHTML = "Computer heeft gewonnen!"
-    cpugeduld.innerHTML = "Een ogenblik, geduld a.u.b"
-
-}    else{
-        console.log("werkt niet");
-    };
-
-
 //spelregels knop
 const gamebutton = document.querySelector('.gamebutton');
 let rulesOn = true
