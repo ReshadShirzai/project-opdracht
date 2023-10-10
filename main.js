@@ -78,6 +78,9 @@ btnHigher.addEventListener('click', function () {
             cpugeduld = document.querySelector('.geduld');
            cputotalwin.innerHTML = "Computer heeft gewonnen!"
            cpugeduld.innerHTML = "Een ogenblik, geduld a.u.b"
+           setTimeout(function () {
+            location.reload();
+           }, 2000);
        
        }    else{      
         //van de computer
