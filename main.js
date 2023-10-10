@@ -1,5 +1,5 @@
 let computerScore = 10;
-let playerScore = 1;
+let playerScore = 10;
 let plrpoints = document.querySelector('.plrpoints');
 plrpoints.innerHTML = playerScore + " " + "punten";
 let cpupoints = document.querySelector('.cpupoints');
@@ -57,6 +57,16 @@ btnHigher.addEventListener('click', function () {
     roll.disabled = false;
     if (totalPlayer > totalComputer) {
         let playerwin = document.querySelector('.winner');
+        if (computerScore <= 0){
+            playertotalwin = document.querySelector('.totalwinner');
+            playergeduld = document.querySelector('.geduld');
+           playertotalwin.innerHTML = "Speler heeft gewonnen!"
+           playergeduld.innerHTML = "Een ogenblik, geduld a.u.b"
+           setTimeout(function () {
+            location.reload();
+           }, 2000);
+       
+       } else{
         playerwin.innerHTML = "Jij wint!"
         setTimeout(function () {
             playerwin.innerHTML = " "
@@ -70,6 +80,7 @@ btnHigher.addEventListener('click', function () {
         plrpoints.innerHTML = playerScore + " " + "punten";
         let cpupoints = document.querySelector('.cpupoints');
         cpupoints.innerHTML = computerScore + " " + "punten";
+    }
 
     } else if (totalPlayer < totalComputer) {
         console.log("Computer wint!");
@@ -123,6 +134,16 @@ BtnLower.addEventListener('click', function () {
     btnHigher.disabled = true;
     roll.disabled = false;
     if (totalPlayer > totalComputer) {
+        if (computerScore <= 0){
+            playertotalwin = document.querySelector('.totalwinner');
+            playergeduld = document.querySelector('.geduld');
+           playertotalwin.innerHTML = "Speler heeft gewonnen!"
+           playergeduld.innerHTML = "Een ogenblik, geduld a.u.b"
+           setTimeout(function () {
+            location.reload();
+           }, 2000);
+       
+       } else{
         console.log("jij wint!")
         playerScore++;
         computerScore--;
@@ -137,7 +158,7 @@ BtnLower.addEventListener('click', function () {
         setTimeout(function () {
             playerwin.innerHTML = " "
         }, 2000);
-
+    };
     } else if (totalPlayer < totalComputer) {
         if (playerScore <= 0){
             cputotalwin = document.querySelector('.totalwinner');
