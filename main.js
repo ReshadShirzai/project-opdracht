@@ -136,6 +136,13 @@ BtnLower.addEventListener('click', function () {
         }, 2000);
 
     } else if (totalPlayer < totalComputer) {
+        if (playerScore <= 0){
+            cputotalwin = document.querySelector('.totalwinner');
+            cpugeduld = document.querySelector('.geduld');
+           cputotalwin.innerHTML = "Computer heeft gewonnen!"
+           cpugeduld.innerHTML = "Een ogenblik, geduld a.u.b"
+       
+       }    else{       
         console.log("Computer wint!")
         playerScore--;
         computerScore++;
@@ -150,6 +157,7 @@ BtnLower.addEventListener('click', function () {
         setTimeout(function () {
             cpuwin.innerHTML = " "
         }, 2000);
+    };
     } else {
         console.log("Gelijkspel!")
         let draw = document.querySelector('.winner');
