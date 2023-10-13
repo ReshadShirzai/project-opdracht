@@ -134,20 +134,19 @@ BtnLower.addEventListener('click', function () {
            setTimeout(function () {
             location.reload();
            }, 2000);
-       
-       } else{
-        playerScore++;
-        computerScore--;
-        let plrpoints = document.querySelector('.plrpoints');
-        plrpoints.innerHTML = playerScore + " " + "punten";
-        let cpupoints = document.querySelector('.cpupoints');
-        cpupoints.innerHTML = computerScore + " " + "punten";
-        let playerwin = document.querySelector('.winner');
-        playerwin.innerHTML = "Jij wint!"
-        setTimeout(function () {
-            playerwin.innerHTML = " "
-        }, 2000);
-    };
+        } else {
+            playerScore++;
+            computerScore--;
+            let plrpoints = document.querySelector('.plrpoints');
+            plrpoints.innerHTML = playerScore + " " + "punten";
+            let cpupoints = document.querySelector('.cpupoints');
+            cpupoints.innerHTML = computerScore + " " + "punten";
+            let playerwin = document.querySelector('.winner');
+            playerwin.innerHTML = "Jij wint!"
+            setTimeout(function () {
+                playerwin.innerHTML = " "
+            }, 2000);
+        }
     } else if (totalPlayer < totalComputer) {
         if (playerScore <= 0){
             cputotalwin = document.querySelector('.totalwinner');
@@ -157,8 +156,7 @@ BtnLower.addEventListener('click', function () {
            setTimeout(function () {
             location.reload();
            }, 2000);
-       
-       }    else{       
+       } else {       
         playerScore--;
         computerScore++;
         let plrpoints = document.querySelector('.plrpoints');
@@ -190,7 +188,7 @@ gamebutton.addEventListener('click', function () {
         rules.textContent = "Jij begint met het rollen van de twee dobbelstenen. Daarna ga je raden of de computer die je tegen speelt hoger of lager gaat gooien. Raad je correct, krijg je één punt. Raad je fout, verlies je één punt. Hetzelfde behoort tot de computer.";
     }
     else {
-        rules.textContent = " "
+        rules.textContent = " ";
         rules.style.border = "0px solid #11D384";
     }
 
