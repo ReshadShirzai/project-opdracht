@@ -17,7 +17,6 @@ const roll = document.querySelector('.roll');
 roll.addEventListener('click', function () {
     randomNumber1 = getRandomNumber();
     randomNumber2 = getRandomNumber();
-    console.log(randomNumber1 + " " + randomNumber2);
     const dobbel1 = document.querySelector(".dobbel1")
     const dobbel2 = document.querySelector(".dobbel2")
     dobbel1.src = "img/dobbel" + randomNumber1 + ".png"
@@ -47,7 +46,6 @@ btnHigher.addEventListener('click', function () {
     let randomNumber4 = getRandomNumber();
     totalPlayer = randomNumber1 + randomNumber2;
     totalComputer = randomNumber3 + randomNumber4;
-    console.log(randomNumber3 + " " + randomNumber4);
     let dobbel3 = document.querySelector(".dobbel3")
     let dobbel4 = document.querySelector(".dobbel4")
     dobbel3.src = "img/dobbel" + randomNumber3 + ".png"
@@ -74,8 +72,6 @@ btnHigher.addEventListener('click', function () {
 
         playerScore++;
         computerScore--;
-        console.log(playerScore);
-        console.log(computerScore);
         let plrpoints = document.querySelector('.plrpoints');
         plrpoints.innerHTML = playerScore + " " + "punten";
         let cpupoints = document.querySelector('.cpupoints');
@@ -83,7 +79,6 @@ btnHigher.addEventListener('click', function () {
     }
 
     } else if (totalPlayer < totalComputer) {
-        console.log("Computer wint!");
         if (playerScore <= 0){
             cputotalwin = document.querySelector('.totalwinner');
             cpugeduld = document.querySelector('.geduld');
@@ -97,8 +92,6 @@ btnHigher.addEventListener('click', function () {
         //van de computer
         playerScore--;
         computerScore++;
-        console.log(playerScore);
-        console.log(computerScore);
         let plrpoints = document.querySelector('.plrpoints');
         plrpoints.innerHTML = playerScore + " " + "punten";
         let cpupoints = document.querySelector('.cpupoints');
@@ -125,7 +118,6 @@ BtnLower.addEventListener('click', function () {
     let randomNumber4 = getRandomNumber();
     totalPlayer = randomNumber1 + randomNumber2;
     totalComputer = randomNumber3 + randomNumber4;
-    console.log(randomNumber3 + " " + randomNumber4);
     let dobbel3 = document.querySelector(".dobbel3")
     let dobbel4 = document.querySelector(".dobbel4")
     dobbel3.src = "img/dobbel" + randomNumber3 + ".png"
@@ -144,11 +136,8 @@ BtnLower.addEventListener('click', function () {
            }, 2000);
        
        } else{
-        console.log("jij wint!")
         playerScore++;
         computerScore--;
-        console.log(playerScore);
-        console.log(computerScore);
         let plrpoints = document.querySelector('.plrpoints');
         plrpoints.innerHTML = playerScore + " " + "punten";
         let cpupoints = document.querySelector('.cpupoints');
@@ -170,11 +159,8 @@ BtnLower.addEventListener('click', function () {
            }, 2000);
        
        }    else{       
-        console.log("Computer wint!")
         playerScore--;
         computerScore++;
-        console.log(playerScore);
-        console.log(computerScore);
         let plrpoints = document.querySelector('.plrpoints');
         plrpoints.innerHTML = playerScore + " " + "punten";
         let cpupoints = document.querySelector('.cpupoints');
@@ -186,7 +172,6 @@ BtnLower.addEventListener('click', function () {
         }, 2000);
     };
     } else {
-        console.log("Gelijkspel!")
         let draw = document.querySelector('.winner');
         draw.innerHTML = "Gelijkspel!"
         setTimeout(function () {
